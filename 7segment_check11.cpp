@@ -8,6 +8,7 @@ int main()
     int t = 0;
     int i = 0;
     int a = 0;
+    string ex = "";
 
     for (a = 0; a < 9; a++)
     {
@@ -29,5 +30,7 @@ int main()
             }
         }
     }
+    cout << "Press any key and then Enter to exit: ";
+    cin >> ex;
     return 0;
 }
