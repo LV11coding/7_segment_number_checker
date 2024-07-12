@@ -8,25 +8,25 @@ int main()
     int t = 0;
     int i = 0;
     int a = 0;
+    int b = 0;
     string ex = "";
 
-    for (a = 0; a < 9; a++)
+    for (b = a; b < 9; b++)
     {
-        for (t = 0; t < 9; t++)
+        for (a = 0; a < 9; a++)
         {
-            for (i = 0; i < 9; i++)
+            for (t = 0; t < 9; t++)
             {
-                if (stojnost[t] + stojnost[a] == stojnost[i] + stojnost[a])
+                for (i = 0; i < 9; i++)
                 {
-                    if (num[t] != num[i])
+                    if (stojnost[t] + stojnost[b] == stojnost[i] + stojnost[a])
                     {
-                        cout << num[a] << num[t] << " ------> " << num[a] << num[i] << endl;
+                        if (num[t] != num[i])
+                        {
+                            cout << num[b] << num[t] << " ------> " << num[a] << num[i] << endl;
+                        }
                     }
                 }
-                /*else
-                {
-                    cout << "Next number isn't printable with" << num[t] << endl;
-                }*/
             }
         }
     }
